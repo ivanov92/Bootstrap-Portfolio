@@ -1,0 +1,262 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background: url('gray.jpg');
+    background-size: 1500%;
+    font-size: 20px;
+    line-height: 32px;
+    font-family: 'Times New Roman', Times, serif;
+    color : #777;
+}
+
+.container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    clear: both;
+}
+
+h1, h2, h3, p {
+    margin-bottom: 20px;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+h1, h2, h3 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    color: #4aaaa5;
+}
+
+h1 {
+    font-size: 30px;
+    line-height: 49px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 20px;
+}
+
+h2, h3 {
+    font-size: 22px;
+}
+
+#main-header {
+    background: #fff;
+    margin: 0 0 30px;
+    z-index: 99;
+    color: #fff;
+    overflow: auto;
+    border-bottom: 1.5px solid #ccc;
+    position: fixed;
+    width: 100%
+}
+
+#Main-H {
+    width: 250px;
+    text-decoration: none;
+    height: 90px;
+    background: #4aaaa5;
+    float: left;
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    line-height: 90px;
+    color: #fff;
+    font-weight: 600;
+    
+}
+
+nav {
+    float: right;
+    margin-top: 28px;
+
+}
+
+nav a {
+    color: gray;
+    text-decoration: none;
+    display: inline-block;
+    border-left: 1px solid #efefef;
+    margin-left: 15px;
+    line-height: 20px;
+    padding-left: 12px;
+    
+}
+nav a:first-child {
+    border-left: 0 none;
+}
+
+#main-container {
+    padding-top: 130px;
+}
+
+.main-section {
+    border: 2px solid #ddd;
+    background: #fff;
+    padding: 30px;
+    margin: 0 0 40px 0;
+    width: 100%;
+    max-width: 650px;
+    float: left;
+    
+}
+
+.image1 {
+    width: 200px;
+    height: auto;
+    margin-top: 10px;
+    float: left;
+    margin-right: 25px;
+}
+
+.sidebar { 
+    background: #fff;
+    width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    padding: 30px;
+    float: right;
+    max-width: 270px;
+}
+
+h2, .sidebar {
+    padding-bottom: 20px;
+    border-bottom: 2px solid #eee;
+    margin-bottom: 15px;
+    line-height: 22px;
+}
+
+.connect {
+    width: 62px;
+    height: 62px;
+    margin-top: 8px;
+    margin-right: 5px;
+}
+
+.connect:last-child {
+    margin-right: 0;
+}
+
+footer {
+    
+    color: black;
+    padding: 30px 0;
+    border-top: 8px solid #4aaaa5;
+    clear: both;
+    font-size: 12px;
+    text-align: center;
+}
+
+
+.apps {
+    width: 274px;
+    overflow: auto;
+    position: relative;
+    float: left;
+    margin: 20px 0 25px;
+}
+
+.apps:nth-child(even) {
+    margin-right: 40px;
+}
+
+.apps img{
+    width: 100%;
+    border:0 none;
+    opacity: .8;
+}
+
+.apps h3{
+    border-bottom: 0;
+    background: #4aaaa5;
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    bottom: 20px;
+    padding: 15px;
+    width: 100%;
+    line-height: 10px;
+    margin-bottom: 0;
+    font-weight: 300;
+}
+
+@media only screen and (max-width: 980px) {
+    .container {
+        padding: 0 20px;
+        max-width: 768px;
+    }
+    #main-container {
+        padding-top: 130px;
+    }
+    .main-section {
+        max-width: 420px;
+    }
+    .image1 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .apps {
+        width: 100%; 
+    }
+
+}
+    @media only screen and (max-width: 768px){
+        .main-section, .sidebar  {
+            max-width: 100%;
+            
+        }
+
+        #main-container {
+            overflow: auto;
+        }
+
+        .sidebar{ 
+            margin-bottom: 40px;
+        }
+
+        .apps {
+            width: 47%;
+            margin-bottom: 10px;
+        }
+        .apps:nth-child(even) {
+            margin-right: 0;
+        }
+        .apps:nth-child(odd) {
+            float: right;
+        }
+        .image1{
+            width:50%;
+        }
+    
+    }
+
+    @media only screen and (max-width: 640px){
+        #main-header {
+            position: static;
+            margin-bottom:20px;
+        }
+        header.container{
+            padding: 0;
+        }
+        #main-container{
+            padding-top: 0;
+        }
+        #Main-H .image1 .apps{
+            width: 100%;
+        }
+        nav {
+            text-align: center;
+            width: 100%;
+            margin: 15px 0;
+
+        }
+        nav a{
+            width: 30%;
+            padding-left: 0;
+        }
+
+    }
+
+
